@@ -10,7 +10,6 @@ default_permissions:
 
   single_file: read
 
-single_file_name: .github/wip.yml
 name: github-action-reviewer-labels
 url: https://github.com/franz-see/github-action-reviewer-labels
 description: Automatically adds/removes labels on a pull request based on who the reviewers are. This is to allow people looking at the list of pull requests who is reviewing what.
