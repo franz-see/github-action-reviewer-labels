@@ -1,0 +1,10 @@
+name: 'Add Reviewer Labels'
+author: 'Franz See <franz@see.net.ph>'
+description: 'Automatically adds/removes labels on a pull request based on who the reviewers are. This is to allow people looking at the list of pull requests who is reviewing what.'
+runs:
+  using: 'node12'
+  main: 'index.js'
+inputs:
+  repo-token:
+    description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
