@@ -1,6 +1,6 @@
 {
   "name": "add-reviewer-labels",
-  "version": "0.0.1",
+  "version": "0.0.1-development",
   "description": "A GitHub Action to add labels to a PR based on assigned reviewers",
   "author": "Franz See <franz@see.net.ph>",
   "license": "MIT",
