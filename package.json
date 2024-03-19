@@ -26,5 +26,8 @@
   },
   "devDependencies": {
     "semantic-release": "^23.0.5"
+  },
+  "repository": {
+    "url": "https://github.com/franz-see/github-action-reviewer-labels"
   }
 }
