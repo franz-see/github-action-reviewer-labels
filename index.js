@@ -116,13 +116,18 @@ async function run() {
                 console.log(`Removed label: ${labelToRemove}`);
             }
 
-            console.log(`Adding labels: ${currentReviewerLabels.join(', ')}`)
-            await octokit.rest.issues.addLabels({
-                owner,
-                repo,
-                issue_number: prNumber,
-                labels: currentReviewerLabels,
-            });
+            if (currentReviewerLabels.length > 0) {
+                console.log(`Adding labels: ${currentReviewerLabels.join(', ')}`)
+                await octokit.rest.issues.addLabels({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    labels: currentReviewerLabels,
+                });
+            } else {
+                console.log(`No labels ot add`)
+            }
+
 
             console.log('Updated labels based on current reviewers:', currentReviewerLabels.join(', '));
         }
