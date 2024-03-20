@@ -29,6 +29,7 @@ jobs:
 
       - name: Release
         run: |
+          git add -f node_modules
           tag='v${{ inputs.version }}'
           major_tag="${tag:0:2}"
           git config user.name github-actions
